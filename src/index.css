@@ -1,0 +1,121 @@
+:root {
+  font-family: 'Bai Jamjuree', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
+
+  color-scheme: light dark;
+  color: #ffffff;
+  background-color: #333333;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ED2E7C;
+}
+
+a:focus {
+  color: #FF8BBB;
+}
+
+a:active {
+  color: #FF8BBB;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  max-width: 640px;
+  margin: 10px auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.items-center {
+  align-items: center;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.flex.gap-sm {
+  gap: 5px;
+}
+
+.flex.gap {
+  gap: 10px;
+}
+
+.bar-chart {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+
+.chart-item {
+  padding: 5px 0px;
+  border-right: 1px solid white;
+}
+
+.chart-item.start {
+  padding-right: 10px;
+}
+
+.chart-item.border-hidden {
+  border-right: 1px solid transparent;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-sel-container {
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 660px) {
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .time-sel-container > div {
+    flex: 1 1 0%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  body {
+    margin: 20px;
+  }
+}
